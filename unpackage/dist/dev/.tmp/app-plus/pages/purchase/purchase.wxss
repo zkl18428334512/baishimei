@@ -1,0 +1,14 @@
+
+.grey{
+  color: rgb(194,194,196);
+  font-size: 24rpx;
+}
+.orange{
+  color:rgb(113,168,188);
+  font-size: 24rpx;
+}
+.green{
+  color:rgb(135,156,192);
+  font-size: 24rpx;
+}
+

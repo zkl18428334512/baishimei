@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"grey{ color: rgb(194,194,196); font-size: ",[0,24],"; }\n.",[1],"orange{ color:rgb(113,168,188); font-size: ",[0,24],"; }\n.",[1],"green{ color:rgb(135,156,192); font-size: ",[0,24],"; }\n",],undefined,{path:"./pages/purchase/purchase.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/purchase/purchase.wxml') } }));

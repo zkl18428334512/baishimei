@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "毛利分析",
+  "usingComponents": {
+    "calendar": "/components/date-picker/date-picker2",
+    "tki-tree": "/components/tki-tree/tki-tree",
+    "fa-icon": "/components/kilvn-fa-icon/fa-icon",
+    "cmd-icon": "/components/cmd-icon/cmd-icon"
+  }
+}

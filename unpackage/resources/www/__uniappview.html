@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"i]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"scApp","entryPagePath":"pages/main/main.html","page":{"pages/main/main.html":{"window":{"navigationBarTitleText":"主页","usingComponents":{}}},"pages/index/index.html":{"window":{"navigationBarTitleText":"主页","usingComponents":{}}},"pages/login/login.html":{"window":{"navigationBarTitleText":"登录","usingComponents":{}}},"pages/bind/bind.html":{"window":{"navigationBarTitleText":"账号绑定","usingComponents":{}}},"pages/user/user.html":{"window":{"navigationBarTitleText":"我的","usingComponents":{}}},"pages/deliver/deliver.html":{"window":{"navigationBarTitleText":"配送任务","enablePullDownRefresh":true,"usingComponents":{}}},"pages/deliveritem/deliveritem.html":{"window":{"navigationBarTitleText":"装车","usingComponents":{}}},"pages/purchase/purchase.html":{"window":{"navigationBarTitleText":"采购任务","enablePullDownRefresh":true,"usingComponents":{}}},"pages/purchaseitem/purchaseitem.html":{"window":{"navigationBarTitleText":"定价","usingComponents":{}}},"pages/inspect/inspect.html":{"window":{"navigationBarTitleText":"验收任务","usingComponents":{}}},"pages/inspectitem/inspectitem.html":{"window":{"navigationBarTitleText":"验收","usingComponents":{}}}},"global":{"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#0faeff","backgroundColor":"#fbf9fe"}},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","borderStyle":"black","list":[{"pagePath":"pages/main/main.html","text":"首页","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/user/user.html","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/main/main","pages/index/index","pages/login/login","pages/bind/bind","pages/user/user","pages/deliver/deliver","pages/deliveritem/deliveritem","pages/purchase/purchase","pages/purchaseitem/purchaseitem","pages/inspect/inspect","pages/inspectitem/inspectitem"],"subPackages":[],"nvueCompiler":"weex","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.0.1","usingComponents":{"cu-custom":"/colorui/components/cu-custom"}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

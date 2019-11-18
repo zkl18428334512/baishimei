@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/yang-paging/fy"],{1460:function(e,n,t){"use strict";t.r(n);var a=t("b8b3"),o=t.n(a);for(var r in a)"default"!==r&&function(e){t.d(n,e,function(){return a[e]})}(r);n["default"]=o.a},9868:function(e,n,t){"use strict";var a=t("fa00"),o=t.n(a);o.a},"9bc9":function(e,n,t){"use strict";var a=function(){var e=this,n=e.$createElement;e._self._c},o=[];t.d(n,"a",function(){return a}),t.d(n,"b",function(){return o})},b8b3:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var a={name:"paging",props:{total:{type:Number,default:0},pageSize:{type:Number,default:0}},data:function(){return{page:[],current:1,zpage:0}},created:function(){var e=this,n=parseInt(e.total),t=parseInt(e.pageSize),a=parseInt(n/t);n/t>a&&a++,e.zpage=a;var o=[];if(a<5)for(var r=1;r<=a;r++)o.push(r);else o=[1,2,3,4,5];e.page=o,console.log(e.page+"1111111111111111111")},methods:{qy:function(e){console.log(e);var n=this;n.current=e;var t=parseInt(n.total),a=parseInt(n.pageSize),o=parseInt(t/a);t/a>o&&o++;var r=[];if(!(o<5))return e>=o-2?(r=[o-4,o-3,o-2,o-1,o],n.page=r,void console.log(n.page+"2222222222222")):o>5&&e<4?(r=[1,2,3,4,5],n.page=r,void console.log(n.page+"333333333333")):o>5&&e>3?(r=[e-2,e-1,e,e+1,e+2],n.page=r,void console.log(n.page+"444444444444444444")):void 0}},onLoad:function(){}};n.default=a},f8ac:function(e,n,t){"use strict";t.r(n);var a=t("9bc9"),o=t("1460");for(var r in o)"default"!==r&&function(e){t.d(n,e,function(){return o[e]})}(r);t("9868");var u=t("2877"),c=Object(u["a"])(o["default"],a["a"],a["b"],!1,null,null,null);n["default"]=c.exports},fa00:function(e,n,t){}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/yang-paging/fy-create-component',
+    {
+        'components/yang-paging/fy-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("f8ac"))
+        })
+    },
+    [['components/yang-paging/fy-create-component']]
+]);                

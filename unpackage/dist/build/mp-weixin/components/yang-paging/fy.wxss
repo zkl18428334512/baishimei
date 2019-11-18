@@ -1,0 +1,33 @@
+
+@charset "UTF-8";
+.fy {
+	display: inline-block;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	margin: auto;
+	width: 100%;
+	margin-top: 50rpx;
+}
+.fy view {
+	text-align: center;
+	display: inline-block;
+	width: 40rpx;
+	height: 40rpx;
+	line-height: 40rpx;
+	margin-left: 2%;
+	border-radius: 50%;
+	background: #00BFFF;
+	color: #ffffff;
+	font-size: 26rpx;
+}
+.fy view:first-child {
+	margin-left: 6%;
+}
+.btn-view view{
+	text-align: center;
+	padding-top: 20rpx;
+}
+

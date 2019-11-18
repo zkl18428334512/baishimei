@@ -1,0 +1,12 @@
+
+.cu-item .flex>.flex-twice {
+	margin-right: 10rpx;
+}
+.cu-item .flex>.flex-twice input {
+	padding: 0 10rpx;
+}
+.cu-item .op [class*="cuIcon-"] {
+	font-size: 48rpx;
+	width: 100%;
+}
+

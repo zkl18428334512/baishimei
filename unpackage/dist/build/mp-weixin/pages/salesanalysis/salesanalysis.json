@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "销售额分析",
+  "usingComponents": {
+    "calendar": "/components/date-picker/date-picker2",
+    "paging": "/components/yang-paging/fy",
+    "tki-tree": "/components/tki-tree/tki-tree",
+    "cmd-icon": "/components/cmd-icon/cmd-icon"
+  }
+}
